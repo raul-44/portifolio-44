@@ -1,0 +1,316 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-family: "Kanit", sans-serif;
+    transition: .25s;
+}
+#menu:active #lateralMenu{
+    left: -1vh;
+}
+.darkmode{
+    background-color: rgb(39, 74, 107);
+    color: rgb(39, 74, 107);
+}
+.darkmode .foto{
+    opacity: 50%;
+}
+.darkmode #lateralMenu{
+    color: rgb(39, 74, 107);
+    border-color: rgb(39, 74, 107);
+}
+.switch {
+    z-index: 99;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  
+}
+  
+  .slider:before {
+    border-radius: 34px;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(39, 74, 107);
+    background-image: url(4679468.png);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: rgb(81, 117, 150);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(39, 74, 107);
+  }
+  
+  input:checked + .slider:before {
+    background-color: #ffffff;
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+#lateralMenu{
+    color: rgb(255, 255, 255);
+    bottom: -97vh;   
+    left: -21vh;
+    width: 20vh;
+    height: 100vh;
+    position: absolute;
+    background-color: rgb(2, 21, 39);
+    align-items: start;
+    transition: 0.3s;
+    border-right:solid;
+    border-color: rgb(255, 255, 255);
+}
+#lateralMenu:hover{
+    display: grid;
+    left: -1vh;
+}
+#lateralMenu li{
+    margin-top: 2ch;
+    font-size: 150%;
+    list-style: none;
+    margin-left: 1.5vh;  
+    font: bold;
+    transition: .25s;
+}
+#lateralMenu a{
+    color: rgb(255, 255, 255);
+}
+#lateralMenu li:hover{
+    font-size: 180%;
+}
+#main{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(2, 21, 39);
+}
+#quali{ 
+    color: rgb(2, 21, 39);
+    width: 100%;
+    height: 60vh;
+}
+#proj{
+    list-style: none;
+    width: 100%;
+    height: 65vh;
+    
+    background-color: rgb(2, 21, 39);
+}
+#Projeto{
+    border: solid;
+    border-color: rgb(2, 21, 39);
+    transition: .2s;
+}
+#Projeto:hover{
+    border-color: rgb(255, 255, 255);
+}
+#imag{
+    width: 100%;
+    height: 40vh;
+    background: fixed;
+    background-image: url(html-codes-scaled.jpeg);
+
+}
+#contato{
+    display: grid;
+    grid-template-columns:  50% 50%;
+    grid-row: 2;
+    color: rgb(2, 21, 39);
+    list-style: none;
+    width: 100%;
+    height: 43vh;
+}
+#contato b{
+    font-size: 200%;
+}
+.conta div{
+    margin-top: -10%;
+    position: absolute;
+    font-size: 70%;
+    transition: .3s;
+    opacity: 0%;
+}
+.conta:hover div{
+    opacity: 100%;
+    position: relative;
+    margin-top: 0%
+}
+#text{
+    font-size: 130%;
+    color: rgb(2, 21, 39);
+    background-color: rgba(240, 248, 255, 0);
+    border: 0;
+    border-bottom: solid;
+    border-bottom-color: rgb(2, 21, 39);
+}
+#bordercontato{
+    grid-column: 1;
+    display: grid;
+    margin-left: 20vh;
+    height: 45vh;
+    width: 135vh;
+    background-color: rgb(47, 88, 126);
+    border-radius: 1ch;
+}
+#contatos{
+    display: grid;
+}
+
+.logtrue{
+    display: grid;
+}
+
+.margin{
+    margin-left: 20vh;
+}
+.title{
+    font-size: 325%;
+}
+#pog{
+    display: flex;
+}
+#Projeto{
+    display: flex;
+    width: 65vh;
+    height: 36vh;
+}
+#Projeto a{
+    font-size: 2100%;
+    
+}
+#OpenModal{
+    margin-top: 1vh;
+    width: 20vh;
+    height: 5vh;
+    border-radius: 10px;
+    border-color: rgba(11, 68, 255, 0.185);
+    text-align: left;
+    font-size: 85%;
+    color: rgb(2, 21, 39);
+    background-color: rgba(11, 68, 255, 0.185);
+    transition: 0.25s;
+}
+#OpenModal:hover{
+    border-color: rgb(63, 63, 128);
+}
+@media only screen and (max-width: 600px) {
+        #lateralMenu li{
+            margin-top: 1vh;
+            font-size: 120%;
+        }
+       
+        #lateralMenu{
+            width:12vh;
+        }
+        #lateralMenu li:hover{
+            font-size: 135%;
+        }
+        #menu{
+            font-size: 80%;
+        }
+        .margin{
+            margin-left: 12vh;
+        }
+        
+        .title{
+            font-size: 200%;
+        }
+        #operation{
+            font-size: 60%;
+        }
+        
+        #main{
+            height: 65vh;
+            font-size: 75%;
+        }
+        #proj{
+            height: 60vh;
+        }
+        #pog{
+            display: grid;
+            grid-template-rows: 50vh 50vh;
+        }
+        #Projeto{
+            font-size: 50%;
+            display: grid;
+            width: 35vh;
+            height: 20vh; 
+        }
+        #Projeto a{
+            font-size: 1000%;
+        }
+        .uy{
+            margin-left: -2%;
+            margin-top: -28vh;
+        }
+        #contato{
+            margin-left: -15%;
+        }
+        #bordercontato{
+            height: 70vh;
+            width: 35vh;
+            background-color: rgb(47, 88, 126);
+            border-radius: 1ch;
+        }
+        #contato input{
+            width: 90%;
+        }
+    
+    }
+#modal{
+    top: 0;
+    position: fixed;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 100%;
+    height: 100%;
+}
+
+.blur{
+    filter: blur(2px);
+}
+#dialog{
+    position: fixed;
+    color: rgb(2, 21, 39);
+    font-size: 300%;
+    width: 50%;
+    height: 50%;
+    transition: 0.5s;
+}
+.dial{
+    font-size: 300%;
+    width: 1vh;
+    height: 1vh;
+}
+.close{
+    display: none;
+}
+
+
+
+
+
+
